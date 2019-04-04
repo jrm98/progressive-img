@@ -32,7 +32,7 @@ having Javascript disabled.
 Example: 
 ```html
 <noscript>
-	<img src="some-image-lowres.png" data-src="some-image.png">
+	<img src="some-image.png">
 </noscript>
 <img src="some-image-lowres.png" data-src="some-image.png">
 ```
