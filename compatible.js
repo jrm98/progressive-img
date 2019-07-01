@@ -25,6 +25,7 @@ function init() {
                         var el = entries[k].target;
                         var src = el.getAttribute('data-src');
                         el.src = src;
+                        el.removeAttribute('data-src');
                         ioImgs.unobserve(el);
                     });
                 }, {
@@ -44,6 +45,7 @@ function init() {
 
                         var el = entries[k].target;
                         var src = el.getAttribute('data-src');
+                        el.removeAttribute('data-src');
                         el.setAttribute('style', "background-image: url('".concat(src, "');"));
                         ioBgImgs.unobserve(el);
                     });

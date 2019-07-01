@@ -19,6 +19,7 @@ export default function init(settings=null) {
                             const el = entries[k].target
                             const src = el.getAttribute('data-src')
                             el.src = src
+                            el.removeAttribute('data-src')
                             ioImgs.unobserve(el)
                         })
                     },
@@ -44,6 +45,7 @@ export default function init(settings=null) {
                             }
                             const el = entries[k].target
                             const src = el.getAttribute('data-src')
+                            el.removeAttribute('data-src')
                             el.setAttribute('style', `background-image: url('${src}');`)
                             ioBgImgs.unobserve(el)
                         })
