@@ -61,8 +61,7 @@ function init() {
       watch(bgImgs, ioBgImgs); // create callback for use with MutationObserver
 
       var callback = function callback(mutationsList, observer) {
-        console.log('mutationsList', mutationsList);
-
+        // console.log('mutationsList', mutationsList)
         for (var i = 0; i < mutationsList.length; i++) {
           if (mutationsList[i].addedNodes && mutationsList[i].addedNodes.length > 0) {
             (function () {

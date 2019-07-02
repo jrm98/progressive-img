@@ -66,7 +66,7 @@ export default function init(settings=null) {
 
             // create callback for use with MutationObserver
             const callback = (mutationsList, observer) => {
-                console.log('mutationsList', mutationsList)
+                // console.log('mutationsList', mutationsList)
                 for (let i = 0; i < mutationsList.length; i++) {
                     if (mutationsList[i].addedNodes && mutationsList[i].addedNodes.length > 0) {
                         const nodes = mutationsList[i].addedNodes
